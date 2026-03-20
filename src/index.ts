@@ -10,44 +10,18 @@ import { store } from './store';
 const app = express();
 const port = process.env.PORT || 3001;
 
+const API_VERSION = process.env.API_VERSION || '1.0.0';
+
 app.use(cors());
 app.use(express.json());
+
+app.get('/api/version', (req, res) => {
+  return res.json({ version: API_VERSION });
+});
 
 store.initialize();
 
 const paperclip = new PaperclipServer();
-
-function getAuthToken(req: express.Request): string | null {
-  const authHeader = req.headers.authorization;
-  if (authHeader?.startsWith('Bearer ')) {
-    return authHeader.slice(7);
-  }
-  return null;
-}
-
-function optionalAuth(req: express.Request, res: express.Response, next: express.NextFunction) {
-  const token = getAuthToken(req);
-  if (token) {
-    const session = auth.validateSession(token);
-    if (session) {
-      (req as any).userId = session.userId;
-    }
-  }
-  next();
-}
-
-function requireAuth(req: express.Request, res: express.Response, next: express.NextFunction) {
-  const token = getAuthToken(req);
-  if (!token) {
-    return res.status(401).json({ error: 'Unauthorized' });
-  }
-  const session = auth.validateSession(token);
-  if (!session) {
-    return res.status(401).json({ error: 'Invalid or expired token' });
-  }
-  (req as any).userId = session.userId;
-  next();
-}
 
 const storage = multer.memoryStorage();
 const upload = multer({
@@ -107,6 +81,40 @@ app.delete('/api/paperclip/:id', async (req, res) => {
     return res.status(500).json({ error: message });
   }
 });
+
+app.use('/uploads', express.static(path.join(process.cwd(), 'uploads')));
+
+function getAuthToken(req: express.Request): string | null {
+  const authHeader = req.headers.authorization;
+  if (authHeader?.startsWith('Bearer ')) {
+    return authHeader.slice(7);
+  }
+  return null;
+}
+
+function optionalAuth(req: express.Request, res: express.Response, next: express.NextFunction) {
+  const token = getAuthToken(req);
+  if (token) {
+    const session = auth.validateSession(token);
+    if (session) {
+      (req as any).userId = session.userId;
+    }
+  }
+  next();
+}
+
+function requireAuth(req: express.Request, res: express.Response, next: express.NextFunction) {
+  const token = getAuthToken(req);
+  if (!token) {
+    return res.status(401).json({ error: 'Unauthorized' });
+  }
+  const session = auth.validateSession(token);
+  if (!session) {
+    return res.status(401).json({ error: 'Invalid or expired token' });
+  }
+  (req as any).userId = session.userId;
+  next();
+}
 
 app.get('/api/feeds', optionalAuth, async (req, res) => {
   try {
@@ -294,14 +302,12 @@ app.delete('/api/comments/:id', requireAuth, async (req, res) => {
   }
 });
 
-app.use('/uploads', express.static(path.join(process.cwd(), 'uploads')));
-
 app.listen(port, () => {
-  console.log(`GoodNews API server running on port ${port}`);
+  console.log(`GoodNews API server running on port ${port} (v${API_VERSION})`);
+  console.log(`  - Version: GET /api/version`);
   console.log(`  - RSS feeds: GET /api/feeds`);
   console.log(`  - Auth: POST /api/auth/register, /api/auth/login`);
   console.log(`  - Users: GET /api/users/me, GET/PUT /api/users/preferences`);
   console.log(`  - Bookmarks: GET/POST/DELETE /api/bookmarks`);
   console.log(`  - Comments: GET/POST/DELETE /api/comments`);
-  console.log(`  - File uploads: POST /api/paperclip/upload`);
 });

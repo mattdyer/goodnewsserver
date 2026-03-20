@@ -12,7 +12,7 @@ export interface NewsArticle {
   sentiment?: {
     score: number;
     isPositive: boolean;
-    matchedKeywords: string[];
+    label: string;
   };
 }
 
@@ -81,7 +81,7 @@ export async function fetchAllFeeds(filter?: 'positive'): Promise<NewsArticle[]>
           sentiment: {
             score: sentiment.score,
             isPositive: sentiment.isPositive,
-            matchedKeywords: sentiment.matchedKeywords,
+            label: sentiment.label,
           },
         };
       });

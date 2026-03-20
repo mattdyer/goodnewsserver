@@ -1,74 +1,43 @@
-const POSITIVE_KEYWORDS = [
-  'breakthrough', 'innovation', 'success', 'achievement', 'discovery', 'advance',
-  'progress', 'improve', 'solution', 'win', 'award', 'celebrate', ' milestone',
-  'record', 'growth', 'positive', 'hope', 'helpful', 'support', 'assist',
-  'collaboration', 'partnership', 'unite', 'inspire', 'empower', 'impressive',
-  'remarkable', 'outstanding', 'excellent', 'good', 'great', 'amazing', 'wonderful',
-  'optimistic', 'uplifting', 'heartwarming', 'heroic', 'courageous', 'brave',
-  'sustainable', 'renewable', 'clean', 'green', 'eco-friendly', 'conservation',
-  'rescue', 'save', 'protect', 'heal', 'cure', 'treatment', 'prevent', 'vaccine',
-  'education', 'learn', 'teach', 'train', 'develop', 'build', 'create', 'design',
-  'launch', 'start', 'expand', 'increase', 'announce', 'recover', 'rebuild', 'restore',
-  'volunteer', 'donate', 'contribute', 'community', 'together', 'global', 'worldwide',
-  'historic', 'first', 'new', 'novel', 'revolutionary', 'transform', 'upgrade',
-];
+import winkNLP from 'wink-nlp';
+import model from 'wink-eng-lite-web-model';
 
-const NEGATIVE_KEYWORDS = [
-  'death', 'died', 'kill', 'murder', 'attack', 'terror', 'war', 'conflict',
-  'disaster', 'crash', 'accident', 'tragedy', 'crisis', 'emergency', 'disaster',
-  'scandal', 'corruption', 'fraud', 'scam', 'fraudulent', 'lawsuit', 'investigation',
-  'arrest', 'jail', 'prison', 'convicted', 'guilty', 'murder', 'shooting', 'violence',
-  'death toll', 'victim', 'injured', 'wounded', 'hospitalized', 'casualties',
-  'bankruptcy', 'layoffs', 'fired', 'unemployment', 'recession', 'depression',
-  'pollution', 'toxic', 'hazard', 'danger', 'threat', 'warning', 'risk',
-  'collapse', 'failure', 'failed', 'fails', 'problem', 'issue', 'bug', 'error',
-];
+const nlp = winkNLP(model);
+const its = nlp.its;
 
 export interface SentimentResult {
   score: number;
   isPositive: boolean;
-  matchedKeywords: string[];
+  label: string;
 }
 
 export function analyzeSentiment(text: string): SentimentResult {
-  const lowerText = text.toLowerCase();
-  
-  let positiveMatches = 0;
-  let negativeMatches = 0;
-  
-  const matchedPositive: string[] = [];
-  const matchedNegative: string[] = [];
-  
-  for (const keyword of POSITIVE_KEYWORDS) {
-    if (lowerText.includes(keyword)) {
-      positiveMatches++;
-      matchedPositive.push(keyword);
-    }
+  if (!text || text.trim().length === 0) {
+    return { score: 0, isPositive: false, label: 'neutral' };
   }
   
-  for (const keyword of NEGATIVE_KEYWORDS) {
-    if (lowerText.includes(keyword)) {
-      negativeMatches++;
-      matchedNegative.push(keyword);
-    }
-  }
+  const doc = nlp.readDoc(text);
+  const rawScore = doc.out(its.sentiment);
   
-  const score = positiveMatches - negativeMatches;
+  const score = typeof rawScore === 'number' ? rawScore : 0;
+  const threshold = 0.05;
+  const isPositive = score >= threshold;
   
-  return {
-    score,
-    isPositive: score > 0,
-    matchedKeywords: matchedPositive,
-  };
+  let label = 'neutral';
+  if (score < -0.3) label = 'very negative';
+  else if (score < -threshold) label = 'negative';
+  else if (score >= 0.3) label = 'very positive';
+  else if (score >= threshold) label = 'positive';
+  
+  return { score, isPositive, label };
 }
 
-export function filterPositiveNews(articles: Array<{ title: string; description: string }>): 
-  Array<{ article: { title: string; description: string }; sentiment: SentimentResult }> {
-  
+export function filterPositiveNews<T extends { title: string; description?: string }>(
+  articles: T[]
+): Array<{ article: T; sentiment: SentimentResult }> {
   return articles
     .map((article) => ({
       article,
-      sentiment: analyzeSentiment(`${article.title} ${article.description}`),
+      sentiment: analyzeSentiment(`${article.title} ${article.description || ''}`),
     }))
     .filter((item) => item.sentiment.isPositive)
     .sort((a, b) => b.sentiment.score - a.sentiment.score);
