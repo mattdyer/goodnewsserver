@@ -1294,5 +1294,93 @@
     "filterPositive": false,
     "theme": "dark",
     "notifications": true
+  },
+  {
+    "userId": "980a33e2-2535-477a-8194-3d516485609d",
+    "sources": [],
+    "categories": [],
+    "filterPositive": false,
+    "theme": "dark",
+    "notifications": true
+  },
+  {
+    "userId": "3695772f-dae5-495c-9afe-54b7d417f1f3",
+    "sources": [],
+    "categories": [],
+    "filterPositive": false,
+    "theme": "dark",
+    "notifications": true
+  },
+  {
+    "userId": "da3ff8da-0b99-493f-af8d-43c206ba8b92",
+    "sources": [],
+    "categories": [],
+    "filterPositive": false,
+    "theme": "dark",
+    "notifications": true
+  },
+  {
+    "userId": "d18d01dc-2976-4f9c-abb4-20aec0b2a8e3",
+    "sources": [],
+    "categories": [],
+    "filterPositive": false,
+    "theme": "dark",
+    "notifications": true
+  },
+  {
+    "userId": "cfe5b32e-7175-4759-9858-24457b5d20f4",
+    "sources": [],
+    "categories": [],
+    "filterPositive": false,
+    "theme": "dark",
+    "notifications": true
+  },
+  {
+    "userId": "357d8fbd-e475-4893-914a-2647542a9220",
+    "sources": [],
+    "categories": [],
+    "filterPositive": false,
+    "theme": "dark",
+    "notifications": true
+  },
+  {
+    "userId": "bca808c4-d537-42ec-a2ec-1b0b1d1f2b1d",
+    "sources": [],
+    "categories": [],
+    "filterPositive": false,
+    "theme": "dark",
+    "notifications": true
+  },
+  {
+    "userId": "4b3ee594-1d95-472d-bd16-f5ce13f24776",
+    "sources": [],
+    "categories": [],
+    "filterPositive": false,
+    "theme": "dark",
+    "notifications": true
+  },
+  {
+    "userId": "528107d4-c9f0-4ba6-a33b-068c6d36e955",
+    "sources": [],
+    "categories": [],
+    "filterPositive": false,
+    "theme": "dark",
+    "notifications": true
+  },
+  {
+    "userId": "fa002ffd-6f6d-4c23-a726-62e088e739c9",
+    "sources": [],
+    "categories": [],
+    "filterPositive": false,
+    "theme": "dark",
+    "notifications": true
+  },
+  {
+    "userId": "15398d8d-2653-4dbe-8dde-8f3ffc93bc4a",
+    "sources": [],
+    "categories": [],
+    "filterPositive": false,
+    "theme": "dark",
+    "notifications": true
   }
 ]

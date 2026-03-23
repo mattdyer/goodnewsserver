@@ -1125,5 +1125,103 @@
     "articleId": "test-article-1",
     "content": "Test comment",
     "createdAt": "2026-03-20T19:48:18.771Z"
+  },
+  {
+    "id": "b96c7a67-1959-430a-a67c-4a39d31b5dae",
+    "userId": "0d7800ed-d3fb-4f69-8b0d-69313f330841",
+    "articleId": "test-article-1",
+    "content": "Test comment",
+    "createdAt": "2026-03-20T19:53:57.413Z"
+  },
+  {
+    "id": "4e539ca4-796f-492c-a487-a0b4be5436a3",
+    "userId": "1a8388d0-df61-4d54-8de4-f7eeecd83f37",
+    "articleId": "test-article-1",
+    "content": "Test comment",
+    "createdAt": "2026-03-20T19:59:10.770Z"
+  },
+  {
+    "id": "6324f78f-7d53-4910-adce-f9993803a433",
+    "userId": "e5d8a120-832d-4f36-a45a-4de9dc788548",
+    "articleId": "test-article-1",
+    "content": "Test comment",
+    "createdAt": "2026-03-20T20:41:54.053Z"
+  },
+  {
+    "id": "3f7df71d-a710-4eb4-97f0-aef4bc752498",
+    "userId": "75b0b8eb-49c1-4b7a-9ffb-7e4814054ca5",
+    "articleId": "test-article-1",
+    "content": "Test comment",
+    "createdAt": "2026-03-20T20:46:49.955Z"
+  },
+  {
+    "id": "b1ac0ca4-4842-4807-8c73-95562a78329b",
+    "userId": "444447a0-54bd-42c3-8489-8675d143acb6",
+    "articleId": "test-article-1",
+    "content": "Test comment",
+    "createdAt": "2026-03-23T14:45:19.247Z"
+  },
+  {
+    "id": "71f675b3-7ec6-450e-9d3a-3f4f02eb5ad9",
+    "userId": "5af8b2cd-eaa4-460e-9de6-aecabea234c8",
+    "articleId": "test-article-1",
+    "content": "Test comment",
+    "createdAt": "2026-03-23T14:52:15.717Z"
+  },
+  {
+    "id": "f6143ef3-9a7b-4580-8b62-ad26f03c6c65",
+    "userId": "35f68c40-6c31-4549-aa9d-3177b0c7f036",
+    "articleId": "test-article-1",
+    "content": "Test comment",
+    "createdAt": "2026-03-23T14:53:28.621Z"
+  },
+  {
+    "id": "294cb680-7714-4bd2-b1e7-168bc0724ec4",
+    "userId": "d99489e9-e3a7-48f7-b776-e27a32015386",
+    "articleId": "test-article-1",
+    "content": "Test comment",
+    "createdAt": "2026-03-23T15:00:11.678Z"
+  },
+  {
+    "id": "ee1738a3-a1b5-4e0d-a2e0-d7b7db1d7320",
+    "userId": "5e5bee9c-7227-4d78-be2f-c43f23b8811b",
+    "articleId": "test-article-1",
+    "content": "Test comment",
+    "createdAt": "2026-03-23T15:05:20.726Z"
+  },
+  {
+    "id": "335210d0-6b4d-441b-a1e6-90f73a14dc7c",
+    "userId": "66a63338-e4dc-4d40-a950-67519ea033af",
+    "articleId": "https://example.com/article1",
+    "content": "Test comment",
+    "createdAt": "2026-03-23T15:06:47.833Z"
+  },
+  {
+    "id": "1f784eb0-6c8c-4051-bcae-7e2b1e4f90ea",
+    "userId": "d3b832ad-69ab-4b67-bb87-d26a40bd2de3",
+    "articleId": "test-article-1",
+    "content": "Test comment",
+    "createdAt": "2026-03-23T15:22:39.402Z"
+  },
+  {
+    "id": "16bb3f24-3662-4ecb-b78f-d203be050e58",
+    "userId": "7a628c1e-b695-4e43-84ba-adbf39a3394e",
+    "articleId": "test-article-1",
+    "content": "Test comment",
+    "createdAt": "2026-03-23T15:42:25.210Z"
+  },
+  {
+    "id": "662261db-27da-4a90-9bf5-58a3555c94fb",
+    "userId": "66a63338-e4dc-4d40-a950-67519ea033af",
+    "articleId": "https://new.example.com/test",
+    "content": "This is a test comment",
+    "createdAt": "2026-03-23T16:19:22.717Z"
+  },
+  {
+    "id": "d9543cb0-1c95-4590-a02c-c58950d6ded5",
+    "userId": "66a63338-e4dc-4d40-a950-67519ea033af",
+    "articleId": "https://final.test/article",
+    "content": "Test comment from API",
+    "createdAt": "2026-03-23T16:27:55.236Z"
   }
 ]

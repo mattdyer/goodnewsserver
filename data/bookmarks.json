@@ -1456,5 +1456,158 @@
     "link": "https://example.com/article",
     "source": "Test",
     "createdAt": "2026-03-20T19:48:18.761Z"
+  },
+  {
+    "id": "1a3a0459-3d41-478e-9734-ffda11d842af",
+    "userId": "9cf8173a-29eb-4c45-ab5f-4347a117c6a0",
+    "articleId": "test-article-1",
+    "title": "Test Article",
+    "link": "https://example.com/article",
+    "source": "Test",
+    "createdAt": "2026-03-20T19:53:57.401Z"
+  },
+  {
+    "id": "bb2814d3-e804-4f5b-8438-4cf51a498b64",
+    "userId": "80d492b2-d487-462b-945e-2d3cca835e92",
+    "articleId": "test-article-1",
+    "title": "Test Article",
+    "link": "https://example.com/article",
+    "source": "Test",
+    "createdAt": "2026-03-20T19:59:10.758Z"
+  },
+  {
+    "id": "29c7ebc0-31f8-4db6-b444-7cfc1063a43d",
+    "userId": "e95eefce-8d07-42e6-83d6-a978aed72195",
+    "articleId": "test-article-1",
+    "title": "Test Article",
+    "link": "https://example.com/article",
+    "source": "Test",
+    "createdAt": "2026-03-20T20:41:54.042Z"
+  },
+  {
+    "id": "b578d124-55b0-446a-bd64-ba5a5c6755ce",
+    "userId": "d5a392cc-1834-4909-a9d9-03aca64cd320",
+    "articleId": "test-article-1",
+    "title": "Test Article",
+    "link": "https://example.com/article",
+    "source": "Test",
+    "createdAt": "2026-03-20T20:46:49.944Z"
+  },
+  {
+    "id": "b228523f-10bb-4710-942d-f3cb29258572",
+    "userId": "300b2e36-55cf-4aae-b6bd-edae9e4b55cc",
+    "articleId": "test-article-1",
+    "title": "Test Article",
+    "link": "https://example.com/article",
+    "source": "Test",
+    "createdAt": "2026-03-23T14:45:19.235Z"
+  },
+  {
+    "id": "2120eba0-7435-4eb2-8558-96c0148c98b2",
+    "userId": "1601d0c4-c06a-4194-abc0-2b5c903c44e0",
+    "articleId": "test-article-1",
+    "title": "Test Article",
+    "link": "https://example.com/article",
+    "source": "Test",
+    "createdAt": "2026-03-23T14:52:15.706Z"
+  },
+  {
+    "id": "fd94314b-a73b-44f2-a73b-370985d7d87a",
+    "userId": "0dec12bf-f69c-4336-9c71-475bf7d578ba",
+    "articleId": "test-article-1",
+    "title": "Test Article",
+    "link": "https://example.com/article",
+    "source": "Test",
+    "createdAt": "2026-03-23T14:53:28.609Z"
+  },
+  {
+    "id": "22226cf6-25ca-4234-82c4-8abe1224f2b9",
+    "userId": "b8f9b48a-7742-4ebb-95e6-0a315b931e03",
+    "articleId": "test-article-1",
+    "title": "Test Article",
+    "link": "https://example.com/article",
+    "source": "Test",
+    "createdAt": "2026-03-23T15:00:11.665Z"
+  },
+  {
+    "id": "55f1a78c-5f4c-4718-9787-650e182e3e37",
+    "userId": "ea676f7c-bce1-44e3-9c5b-2a2fddc28e85",
+    "articleId": "test-article-1",
+    "title": "Test Article",
+    "link": "https://example.com/article",
+    "source": "Test",
+    "createdAt": "2026-03-23T15:05:20.712Z"
+  },
+  {
+    "id": "2c92faa1-e8aa-498c-b232-f640b48b1a4a",
+    "userId": "66a63338-e4dc-4d40-a950-67519ea033af",
+    "articleId": "https://example.com/article1",
+    "title": "Test Article",
+    "link": "https://example.com/article1",
+    "source": "Test",
+    "createdAt": "2026-03-23T15:06:23.966Z"
+  },
+  {
+    "id": "da80034a-a0f4-4ba9-be48-1fec0ddffbdf",
+    "userId": "19c68ec7-0fff-47b1-b35a-e1ff75a84e4b",
+    "articleId": "test-article-1",
+    "title": "Test Article",
+    "link": "https://example.com/article",
+    "source": "Test",
+    "createdAt": "2026-03-23T15:22:39.391Z"
+  },
+  {
+    "id": "862623c1-8177-4426-84eb-fb04b303b06b",
+    "userId": "8a5abfd7-edf6-4a6a-b173-79b8c483b7d3",
+    "articleId": "test",
+    "title": "Test",
+    "link": "https://example.com",
+    "source": "Test",
+    "createdAt": "2026-03-23T15:31:21.231Z"
+  },
+  {
+    "id": "13a7ceb4-f2f4-419e-a709-105d6e414efb",
+    "userId": "6c8ff8b2-8324-4f88-bdfd-90230b125e9d",
+    "articleId": "test-article-1",
+    "title": "Test Article",
+    "link": "https://example.com/article",
+    "source": "Test",
+    "createdAt": "2026-03-23T15:42:25.198Z"
+  },
+  {
+    "id": "1e18be32-24e7-461d-bdec-3dcd44e5c446",
+    "userId": "66a63338-e4dc-4d40-a950-67519ea033af",
+    "articleId": "http://example.com/test",
+    "title": "Test Article",
+    "link": "http://example.com/test",
+    "source": "Test",
+    "createdAt": "2026-03-23T16:01:47.085Z"
+  },
+  {
+    "id": "57e007bc-7a45-47dd-86a2-b3ff5fa02795",
+    "userId": "66a63338-e4dc-4d40-a950-67519ea033af",
+    "articleId": "https://new.example.com/test",
+    "title": "New Test Article",
+    "link": "https://new.example.com/test",
+    "source": "Test Source",
+    "createdAt": "2026-03-23T16:19:05.206Z"
+  },
+  {
+    "id": "dd5b96f1-a96a-4a0d-9a47-ae1deef8d3db",
+    "userId": "66a63338-e4dc-4d40-a950-67519ea033af",
+    "articleId": "https://test.example.com/new",
+    "title": "New Test",
+    "link": "https://test.example.com/new",
+    "source": "Test",
+    "createdAt": "2026-03-23T16:24:21.863Z"
+  },
+  {
+    "id": "fc1793f2-8a2d-4ff4-aaa3-3607d68d7a61",
+    "userId": "66a63338-e4dc-4d40-a950-67519ea033af",
+    "articleId": "https://final.test/article",
+    "title": "Final Test",
+    "link": "https://final.test/article",
+    "source": "Test",
+    "createdAt": "2026-03-23T16:27:41.797Z"
   }
 ]
