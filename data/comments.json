@@ -1223,5 +1223,54 @@
     "articleId": "https://final.test/article",
     "content": "Test comment from API",
     "createdAt": "2026-03-23T16:27:55.236Z"
+  },
+  {
+    "id": "18ebaaaf-8603-44ef-a63e-48ddf3023710",
+    "userId": "701d706b-4c73-4695-a87c-f71def599588",
+    "articleId": "test-article-1",
+    "content": "Test comment",
+    "createdAt": "2026-03-23T17:48:03.718Z"
+  },
+  {
+    "id": "b74913d8-cd98-4a58-bc7d-a029c0a5e90b",
+    "userId": "5256527c-a2af-49ca-9619-ed68a00d0de1",
+    "articleId": "test-article-1",
+    "content": "Test comment",
+    "createdAt": "2026-03-23T18:03:43.525Z"
+  },
+  {
+    "id": "632137a3-4ea1-49a8-9383-726ac72b1366",
+    "userId": "9806113f-03b6-4640-8b52-9cbfc2225d23",
+    "articleId": "https://www.nytimes.com/2026/03/18/technology/turing-award-winners-quantum-cryptography.html",
+    "content": "testing",
+    "createdAt": "2026-03-23T18:08:48.479Z"
+  },
+  {
+    "id": "35734928-02cf-4dfd-afcc-f7edace00b6d",
+    "userId": "9806113f-03b6-4640-8b52-9cbfc2225d23",
+    "articleId": "https://www.bbc.com/news/articles/c7474004g01o?at_medium=RSS&at_campaign=rss",
+    "content": "testing",
+    "createdAt": "2026-03-23T18:09:16.589Z"
+  },
+  {
+    "id": "0e67e23e-a9aa-4984-9c68-dd2339cab36d",
+    "userId": "f02c23e1-dceb-48ca-a671-3495b105a372",
+    "articleId": "test-article-1",
+    "content": "Test comment",
+    "createdAt": "2026-03-23T18:10:49.414Z"
+  },
+  {
+    "id": "f5e382dd-dd2a-4e4f-bf45-024b2397c201",
+    "userId": "9806113f-03b6-4640-8b52-9cbfc2225d23",
+    "articleId": "https://techcrunch.com/2026/03/22/techcrunch-mobility-uber-everywhere-all-at-once/",
+    "content": "ljkjk",
+    "createdAt": "2026-03-23T18:11:47.445Z"
+  },
+  {
+    "id": "d69cf763-d34f-43aa-a295-988b33030251",
+    "userId": "beb57abf-91fa-475f-b315-a7c6ac55b8df",
+    "articleId": "test-article-1",
+    "content": "Test comment",
+    "createdAt": "2026-03-23T18:12:06.695Z"
   }
 ]

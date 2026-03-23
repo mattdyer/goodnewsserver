@@ -1609,5 +1609,59 @@
     "link": "https://final.test/article",
     "source": "Test",
     "createdAt": "2026-03-23T16:27:41.797Z"
+  },
+  {
+    "id": "3ffcb2c9-53fe-4da0-9b93-46b1752d1221",
+    "userId": "6db3799f-62cb-480d-b771-a1ea5d5bd5fc",
+    "articleId": "test-article-1",
+    "title": "Test Article",
+    "link": "https://example.com/article",
+    "source": "Test",
+    "createdAt": "2026-03-23T17:48:03.704Z"
+  },
+  {
+    "id": "c3ed0a0f-f5c4-4115-b5b0-4d7e25cc751f",
+    "userId": "1ce57f18-c9a7-489b-86a6-4e0e4d83565d",
+    "articleId": "test-article-1",
+    "title": "Test Article",
+    "link": "https://example.com/article",
+    "source": "Test",
+    "createdAt": "2026-03-23T18:03:43.515Z"
+  },
+  {
+    "id": "5a2e936d-514d-4ddd-b756-84b846e23a07",
+    "userId": "9806113f-03b6-4640-8b52-9cbfc2225d23",
+    "articleId": "https://www.bbc.com/news/articles/c895wwp3kqlo?at_medium=RSS&at_campaign=rss",
+    "title": "Facebook offering TikTok and YouTube creators $3,000 to post content",
+    "link": "https://www.bbc.com/news/articles/c895wwp3kqlo?at_medium=RSS&at_campaign=rss",
+    "source": "BBC Technology",
+    "createdAt": "2026-03-23T18:08:30.270Z"
+  },
+  {
+    "id": "152be77b-f37f-4a74-8e0c-c37d42a37513",
+    "userId": "9806113f-03b6-4640-8b52-9cbfc2225d23",
+    "articleId": "https://www.bbc.com/news/articles/c895wwp3kqlo?at_medium=RSS&at_campaign=rss",
+    "title": "Facebook offering TikTok and YouTube creators $3,000 to post content",
+    "link": "https://www.bbc.com/news/articles/c895wwp3kqlo?at_medium=RSS&at_campaign=rss",
+    "source": "BBC Technology",
+    "createdAt": "2026-03-23T18:08:30.323Z"
+  },
+  {
+    "id": "86e5e43a-4e7d-40bd-a199-c01f90bb68dd",
+    "userId": "3738e5a8-612b-486e-8032-42cc11a5a2cc",
+    "articleId": "test-article-1",
+    "title": "Test Article",
+    "link": "https://example.com/article",
+    "source": "Test",
+    "createdAt": "2026-03-23T18:10:49.401Z"
+  },
+  {
+    "id": "d8ebef28-e4fd-448c-8c91-734177886100",
+    "userId": "4cd59323-3da2-4b69-b5c4-8627eacf0006",
+    "articleId": "test-article-1",
+    "title": "Test Article",
+    "link": "https://example.com/article",
+    "source": "Test",
+    "createdAt": "2026-03-23T18:12:06.682Z"
   }
 ]
