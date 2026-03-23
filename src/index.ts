@@ -10,7 +10,7 @@ import { store } from './store';
 const app = express();
 const port = process.env.PORT || 3001;
 
-const API_VERSION = process.env.API_VERSION || '1.0.0';
+const API_VERSION = process.env.API_VERSION || '1.1.0';
 
 app.use(cors());
 app.use(express.json());

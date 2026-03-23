@@ -45,7 +45,7 @@ function createApp() {
   app.use(express.json());
 
   app.get('/api/version', (req, res) => {
-    return res.json({ version: '1.0.0' });
+    return res.json({ version: '1.1.0' });
   });
 
   function getAuthToken(req: express.Request): string | null {
@@ -286,7 +286,7 @@ describe('API Endpoints', () => {
       const res = await request(app).get('/api/version');
       expect(res.status).toBe(200);
       expect(res.body).toHaveProperty('version');
-      expect(res.body.version).toBe('1.0.0');
+      expect(res.body.version).toBe('1.1.0');
     });
   });
 
